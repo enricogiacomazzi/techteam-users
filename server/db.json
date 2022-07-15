@@ -12,6 +12,12 @@
                     "zipcode": "220102",
                     "city": "Milan",
                     "country": "Italy"
+                },
+                {
+                    "street": "via della prova 4",
+                    "zipcode": "220102",
+                    "city": "Milan",
+                    "country": "Italy"
                 }
             ]
         }
