@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Login } from './pages/public/Login';
 import { UsersList } from './pages/private/users/UserList';
 import { InvoicesList } from './pages/private/invoices/InvoicesList';
+import { ProtectedRoute } from './components/ProtectedRoute';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,7 +17,11 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="login" element={<Login/>}/>
-      <Route path="/" element={<App/>}>
+      <Route path="/" element={
+        <ProtectedRoute>
+          <App/>
+        </ProtectedRoute>
+      }>
         <Route path="users" element={<UsersList/>}/>
         <Route path="invoices" element={<InvoicesList/>}/>
       </Route>

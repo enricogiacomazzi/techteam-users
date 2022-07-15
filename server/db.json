@@ -1,3 +1,19 @@
 {
-    "users": []
+    "users": [
+        {
+            "id": 1,
+            "name": "mario",
+            "surname": "rossi",
+            "age": 22,
+            "email": "mario@rossi.it",
+            "addresses": [
+                {
+                    "street": "via della prova 2",
+                    "zipcode": "220102",
+                    "city": "Milan",
+                    "country": "Italy"
+                }
+            ]
+        }
+    ]
 }

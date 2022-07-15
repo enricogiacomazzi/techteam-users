@@ -6,14 +6,13 @@ import { Navbar } from './components/Navbar';
 import { useAuthentication } from './hooks/useAuthentication';
 
 const App:React.FC = () => {
-  const {isLogged} = useAuthentication();
-  // const nav = useNavigate();
-  const logged = isLogged();
-  console.log('logged', logged);
+  // const {isLogged} = useAuthentication();
+  // const logged = isLogged();
+  // console.log('logged', logged);
 
-  if(!logged) {
-    return <Navigate to="/login"/>
-  }
+  // if(!logged) {
+  //   return <Navigate to="/login"/>
+  // }
 
 
   return (
